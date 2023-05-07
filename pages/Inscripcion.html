@@ -7,6 +7,43 @@
     <title>Inscripcion</title>
 </head>
 <body>
-    <h1> Inscribite aca</h1>
+    <header>
+        <strong> ARMADA ARGENTINA </strong>  
+    </header>
+    <main>  
+    <h1 style="text-align: left; font: small; color: blueviolet;"> Inscribite aca</h1>
+    <form>
+        <label for="nombre_apellido">Nombre y Apellido:</label>
+        <input type="text" name="nombre_apellido"/>
+        <br>
+        <label for="dni"> DNI</label>
+        <input type="text" name="numerodni" />
+        <br>
+        <label for="mr"> MR</label>
+        <input type="text" name="numeromr" />
+        <p> Genero
+        <div>hombre</div>
+        <input type="radio" name="genero" value="hombre" />
+        <div>mujer</div>
+        <input type="radio" name="genero" value="mujer" />
+        </p>
+        <br>
+        <label for="cuadro"> Cuadro </label>
+        <select name="cuerpo">
+            <option value="oficial"> Oficial</option>
+            <option value="suboficial"> Suboficial</option>
+            <option value="marinero"> Marinero tropa voluntaria</option>
+        </select>
+        <br>
+        <label for="email"> Email</label>
+        <input type="email" name="email" />
+        <hr>
+        <div> Acepta terminos y condiciones</div>
+        <input type="checkbox" name="acepta" value="1"/> 
+        <br>
+        <input type="submit" value="enviar formulario"/>
+    </form>
+
+    </main>
 </body>
-</html>
+</html> 
