@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inscripcion.css">
     <title>Inscripcion</title>
 </head>
 <body>
@@ -11,22 +12,28 @@
         <strong> ARMADA ARGENTINA </strong>  
     </header>
     <main>  
-    <h1 style="text-align: left; font: small; color: blueviolet;"> Inscribite aca</h1>
-    <form>
-        <label for="nombre_apellido">Nombre y Apellido:</label>
+    <h1 style="text-align: left; font: small;"> Inscribite aca</h1>
+    <hr>
+    <h2 style="text-align: center;"> Formulario de Inscripción</h2>
+
+    <form name="formulario" method="post" action="/send.php">
+        <fieldset>
+        <legend> DATOS PERSONALES</legend>    
+        <label for="nombre_apellido">Nombres y Apellidos: <span aria-label="required">*</span> </label>
         <input type="text" name="nombre_apellido"/>
         <br>
-        <label for="dni"> DNI</label>
+        <label for="dni"> DNI <span aria-label="required">*</span> </label>
         <input type="text" name="numerodni" />
         <br>
-        <label for="mr"> MR</label>
-        <input type="text" name="numeromr" />
-        <p> Genero
-        <div>hombre</div>
-        <input type="radio" name="genero" value="hombre" />
-        <div>mujer</div>
-        <input type="radio" name="genero" value="mujer" />
-        </p>
+        <label for="fechadenacimiento"> Fecha de Nacimiento <span aria-label="required">*</span> </label>
+        <input type="date" name="fechadenacimiento" />
+        <br>
+        <label for="genero"> Género </label>
+        <select name="genero">
+            <option value="hombre">Hombre</option>
+            <option value="mujer"> Mujer</option>
+            <option value="otros"> Otros</option>
+        </select>
         <br>
         <label for="cuadro"> Cuadro </label>
         <select name="cuerpo">
@@ -34,14 +41,38 @@
             <option value="suboficial"> Suboficial</option>
             <option value="marinero"> Marinero tropa voluntaria</option>
         </select>
+        </fieldset>
         <br>
-        <label for="email"> Email</label>
-        <input type="email" name="email" />
-        <hr>
+        <fieldset>
+        <legend> DATOS DE CONTACTO </legend> 
+        <label for="address"> Dirección</label>
+        <input type="address" name="domicilio"/>
+        <br>
+        <label for="address"> Provincia</label>
+        <input type="address" name="provincia" />
+        <br>
+        <label for="movilnumber"> Número de contacto <span aria-label="required">*</span> </label>
+        <input type="tel" name="movilnumber" />
+        <br>
+        <label for="email"> Email <span aria-label="required">*</span> </label>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autofocus>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>INFORMACIÓN DEL CURSO </legend>
+        <section>
+            <label for="descripcion"> Breve descripción del motivo a inscribirse</label>
+            <textarea name="descripcion" id="descripcion">  </textarea>
+            <br>
+            <label for="expectativas"> Breve descripción de sus expectativas del curso</label>
+            <textarea name="expectativas" id="descripcion">  </textarea>
+        </section>
+        </fieldset>
+        <br>
         <div> Acepta terminos y condiciones</div>
         <input type="checkbox" name="acepta" value="1"/> 
-        <br>
-        <input type="submit" value="enviar formulario"/>
+        <hr>
+        <input type="submit" value="Enviar Formulario"/>
     </form>
 
     </main>

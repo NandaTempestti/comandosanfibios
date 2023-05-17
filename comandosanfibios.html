@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Comandos Anfibios</title>
 </head>
 <body>
- <header> <strong> ARMADA ARGENTINA </strong> </header>
- <nav> 
-    <a href="./pages/Inscripcion.html"> Inscripción</a>
-    <br>
-    <a href="./pages/fotos.html">Fotos</a>
+ <header>ARMADA ARGENTINA - APCA </header>
+ <nav style="text-align:right; font-family: Arial, Helvetica, sans-serif;">
+    <a href="./pages/Inscripcion.html" style="color: rgb(242, 243, 185);"> QUIENES SOMOS</a> 
+    <a href="./pages/Inscripcion.html" style="color: rgb(242, 243, 185);"> APLICAR</a>
+    <a href="./pages/Inscripcion.html" style="color: rgb(242, 243, 185);"> CAPACITACIÓN</a>
+    <a href="./pages/Inscripcion.html" style="color: rgb(242, 243, 185);"> NOTICIAS</a>
+    <a href="./pages/fotos.html" style="color: rgb(242, 243, 185);">FOTOS</a>
+    <a href="./pages/Inscripcion.html" style="color: rgb(242, 243, 185);"> FAQ</a>
  </nav>
  <main> 
-    <h1 id="Titulo" class="Principal" style="text-align: center; background-color: blue;font-style: oblique;text-underline-position: below; "> Agrupacion de Comandos Anfibios de la Armada Argentina </h1> 
-    <hr>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iucR5fXPdTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe>
-    
-    <hr>
-
-    <section id="Historia" style="text-decoration: solid; color: darkgreen; font: 900;"> 
-       <h2> 
-        <strong> 
+     <h1 id="titulo" > AGRUPACION DE COMANDOS ANFIBIOS DE LA ARMADA ARGENTINA </h1> 
+    <div style="position: fixed; z-index: -99; width: 100%; height: 40%">
+        <iframe frameborder="0" height="100%" width="100%" mute="true" autoplay=" true"
+    src="https://www.youtube.com/embed/iucR5fXPdTY" >
+    </iframe>
+    </div>
+    <div id="historia" > 
+       <h2 class="seccion"> 
         HISTORIA
-        </strong>
         </h2>
-    </section> 
-    <article>
         <p> 
         En el año 1966 fue creada la Compañía de Exploración y Reconocimiento Anfibio. Esta se formó sobre la base de la Compañía de Infantería de Marina N.º 7. 
+        <br>
+        <a href="./pages/historia.html" style="color: darkred;">Entra acá para conocer mas </a> 
         </p>
-    </article>
-    <hr>
-    <h3>
-        Misión
-    </h3>
+    </div>
+    <div id="mision">
+    <h2 class="seccion">
+        ENTRENAMIENTO
+    </h2>
     <p>
         Reconocimiento anfibio. Las actividades que realizan son:
         <ul>
@@ -44,10 +46,13 @@
             <li> Infiltración</li> 
             <li> curso comando </li> 
         </ul> 
+        <a href="./pages/training.html" style="color: darkred;">Comienza a entrenar duro</a>
     </p>
-    <h3>
-        Destacados
-    </h3>
+    </div>
+    <div id="destacados"> 
+        <h2 class="seccion">
+            NOTICIAS
+        </h2>
     <p>
         <ol>
             <li> En el año 1952, el Comando General de la Infantería de Marina asignó a la Compañía de Vigilancia y Seguridad de la Base de Submarinos (actual Base Naval Mar del Plata) la tarea de instruir un grupo de reconocimiento anfibio.</li>
@@ -55,20 +60,34 @@
             <li> Sobre la base de los efectivos de la Compañía de I.M Nº 7 se crea, en el año 1966 la Compañía de Exploración y Reconocimiento Anfibio asignándosele nuevas tareas y responsabilidades.</li>
             <li> En 1974 la Unidad adquierió la actual denominación de Agrupación de Comandos Anfibios.</li>
         </ol>
+        <a href="./pages/noticias.html" style="color: darkred;">Mas noticias aquí</a>
     </p>
+    </div>
     <br>
     <figure>  
-    <img src="https://i.ytimg.com/vi/qDjXLM-ChMY/sddefault.jpg" alt="APCA"> 
+    <img src="https://i.ytimg.com/vi/qDjXLM-ChMY/sddefault.jpg" alt="APCA" > 
     <figcaption> 
       Personal del APCA  
     </figcaption> 
     </figure>
 </main>
 <hr>
-<footer> 
- <address>
-    Base de Infanteria de Marina N°2 - Baterias - BASE NAVAL PUERTO BELGRANO
- </address>   
+<footer class="pie"> 
+    <div class="pie1"> 
+    DIRECCION:  
+    <br> Base de Infanteria de Marina N°2 
+    <br>   BASE NAVAL PUERTO BELGRANO
+    </div>  
+    <div class="pie2">
+        CONTACTO
+        <br> algunemail@gmail.com
+        <br> +5492563879
+    </div>
+    <div class="pie3">
+        LINKS
+        <br> Algun facebook
+        <br>instagram
+    </div>
 </footer>
 </body>
 </html>
