@@ -5,60 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/inscripcion.css">
-    <title>Inscripcion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman&family=Kdam+Thmor+Pro&family=Michroma&family=Oxanium:wght@600&family=Share+Tech&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/abfaa61a96.js" crossorigin="anonymous"></script>
+    <title>APLICAR</title>
 </head>
 <body>
-    <header>
-        <strong> ARMADA ARGENTINA </strong>  
-    </header>
-    <main>  
-    <h1 style="text-align: left; font: small;"> Inscribite aca</h1>
-    <hr>
-    <h2 style="text-align: center;"> Formulario de Inscripción</h2>
-
+    <div class="primeraparte">
+        <header> 
+            <img src="https://4.bp.blogspot.com/-tSmuyxkKxzY/VolD0geh6OI/AAAAAAACTk0/ocdUNwkIoi8/s640/Comandos%2BAnfibios%2B%252819%2529.jpg" alt="escudoapca" width="50px" height="80px"> <p style="font-family: 'Kdam Thmor Pro', sans-serif;"> ARMADA ARGENTINA - APCA</p>
+        </header>
+        <nav style="text-align:right; font-family: 'Michroma', sans-serif;" >
+            <a href="historia.html" style="color:black;"> QUIENES SOMOS</a> 
+            <a href="Inscripcion.html" style="color: black;"> APLICAR</a>
+            <a href="training.html" style="color: black;"> CAPACITACIÓN</a>
+            <a href="noticias.html" style="color:black;"> NOTICIAS</a>
+            <a href="fotos.html" style="color: black;">FOTOS</a>
+            <a href="faq.html" style="color: black;"> FAQ</a>
+        </nav>
+        <main>  
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="text-align: center;"> FORMULARIO DE INSCRIPCIÓN</h1>
+            
+    </div>
     <form name="formulario" method="post" action="/send.php">
-        <fieldset>
+        <fieldset class="primercuadro">
         <legend> DATOS PERSONALES</legend>    
         <label for="nombre_apellido">Nombres y Apellidos: <span aria-label="required">*</span> </label>
-        <input type="text" name="nombre_apellido"/>
+        <input id="nombreyapellido" type="text" name="nombre_apellido"/>
         <br>
         <label for="dni"> DNI <span aria-label="required">*</span> </label>
-        <input type="text" name="numerodni" />
+        <input id="dni" type="text" name="numerodni" />
         <br>
         <label for="fechadenacimiento"> Fecha de Nacimiento <span aria-label="required">*</span> </label>
-        <input type="date" name="fechadenacimiento" />
+        <input id="fechadenacimiento" type="date" name="fechadenacimiento" />
         <br>
         <label for="genero"> Género </label>
-        <select name="genero">
+        <select name="genero"> <!-- poner "id" si es necesario -->
             <option value="hombre">Hombre</option>
             <option value="mujer"> Mujer</option>
             <option value="otros"> Otros</option>
         </select>
         <br>
         <label for="cuadro"> Cuadro </label>
-        <select name="cuerpo">
+        <select name="cuerpo"> <!-- poner "id" si es necesario -->
             <option value="oficial"> Oficial</option>
             <option value="suboficial"> Suboficial</option>
             <option value="marinero"> Marinero tropa voluntaria</option>
         </select>
         </fieldset>
         <br>
-        <fieldset>
+        <fieldset class="otrocuadro">
         <legend> DATOS DE CONTACTO </legend> 
         <label for="address"> Dirección</label>
-        <input type="address" name="domicilio"/>
+        <input id="domicilio" type="address" name="domicilio"/>
         <br>
         <label for="address"> Provincia</label>
-        <input type="address" name="provincia" />
+        <input id="provincia" type="address" name="provincia" />
         <br>
         <label for="movilnumber"> Número de contacto <span aria-label="required">*</span> </label>
-        <input type="tel" name="movilnumber" />
+        <input id="telefono" type="tel" name="movilnumber" />
         <br>
-        <label for="email"> Email <span aria-label="required">*</span> </label>
-        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autofocus>
+        <label  for="email"> Email <span aria-label="required">*</span> </label>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
         </fieldset>
         <br>
-        <fieldset>
+        <fieldset class="otrocuadro">
         <legend>INFORMACIÓN DEL CURSO </legend>
         <section>
             <label for="descripcion"> Breve descripción del motivo a inscribirse</label>
@@ -68,13 +85,31 @@
             <textarea name="expectativas" id="descripcion">  </textarea>
         </section>
         </fieldset>
-        <br>
-        <div> Acepta terminos y condiciones</div>
-        <input type="checkbox" name="acepta" value="1"/> 
-        <hr>
-        <input type="submit" value="Enviar Formulario"/>
+        <div class="condiciones"> 
+            <input type="checkbox" name="acepta" value="1"/> Acepto términos y condiciones 
+            <div>
+                <input type="submit" value="Enviar Formulario" style="font-size: 20px; font-family: 'Goldman', cursive; background-color: rgb(250, 250, 253);"/>
+            </div>
+        </div>
     </form>
-
     </main>
+    <hr>
+    <footer class="pie"> 
+        <div class="pie1"> 
+            DIRECCION:  
+            <br><i class="fa-solid fa-location-dot" style="color: #fcfcfd;"></i> Batallón de Infanteria de Marina N°2 
+            <br>   BASE NAVAL PUERTO BELGRANO
+            </div>  
+            <div class="pie2">
+                CONTACTO
+                <br> <i class="fa-regular fa-envelope" style="color: #fcfcfc;"> </i> algunemail@gmail.com
+                <br> <i class="fa-solid fa-phone" style="color: #fcfcfc;"></i>+5492563879
+            </div>
+            <div class="pie3">
+                LINKS
+                <br> <i class="fa-brands fa-facebook" style="color: #fcfcfc;"></i> Algun facebook
+                <br><i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i>instagram
+            </div>
+    </footer>
 </body>
 </html> 

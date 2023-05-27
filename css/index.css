@@ -1,44 +1,91 @@
+
+/* font-family: 'Chakra Petch', sans-serif;
+font-family: 'Goldman', cursive;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Michroma', sans-serif;
+font-family: 'Oxanium', cursive;
+font-family: 'Share Tech', sans-serif;
+ */
+ video {
+    position:absolute;
+    top: 0px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.9;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
 body {
     background-color: rgb(11, 12, 12);
     color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 100px;
 }
 #titulo {
-    color: rgb(202, 190, 14);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
-    text-align: center;
+    color: gold;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 110px;
+    width: 100%;
+    text-align: center;  
 }
 .seccion {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Michroma', sans-serif;
+}
+
+.contenedorpadre1 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 300px;
+    flex: 1 1 0;
+}
+.contenedorpadre2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    justify-content: center;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    flex: 1 1 0;
+}
+.contenedorpadre3 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    flex: 1 1 0;
 }
 div#historia {
     background-color: rgb(221, 226, 212);
-    margin-top: 300px;
-    margin-left: 50px;
-    display: inline-block;
-    width: 600px;
-    height: 200px;
     color: black;
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
     text-align: justify;
-}
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 30%;
+    font-size:x-large;
+    }
 div#mision {
     background-color: rgb(221, 226, 212);
-    display: inline-block;
-    margin-top: 380px;
-    width: 600px;
-    height: 300px;
-    margin-left: 100px;
     color: black;
     padding-left: 20px;
     padding-top: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 30%;
+    font-size: large;
 }
 div#destacados {
     background-color: rgb(221, 226, 212); 
@@ -46,16 +93,21 @@ div#destacados {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
-    width: 800px;
-    height: 400px;
-    margin-top: 100px;
-    margin-left: 50px;
     text-align: justify;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    width: 50%;
+    column-count: 2;
+    column-gap: 20px;
 }
 .pie {
     margin-top: 50px;
     margin-left: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, black , gray);
+    border-radius: 10px;
 }
 .pie1 {
     display: inline-block;
