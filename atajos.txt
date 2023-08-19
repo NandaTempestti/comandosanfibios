@@ -1,0 +1,3 @@
+Par aresumir el codigo que se haria usando un if-else en javascript,en react se utilizaria por ejemplo:
+const married = true;
+return <h1> {married ? "estoy casado" : "no estoy casado"} </h1>

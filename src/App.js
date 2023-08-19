@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Componentes/Navbar';
+import Home from './Componentes/Home';
+import Footer from './Componentes/Footer';
+import QuienesSomos from './Componentes/Quienesomos';
+import Inscripcion from './Componentes/Inscripción';
+import CarouselFadeExample from './Componentes/Capacitacion';
+import Contacto from './Componentes/Contacto';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      
+      <Routes>
+        <Route index element={ <Home /> }></Route>
+        <Route path='/home' element={ <Home /> }></Route> 
+        <Route path='/quienessomos'element={ <QuienesSomos /> } > </Route>
+        <Route path='/inscripcion' element={ <Inscripcion /> } > </Route>
+        <Route path='/capacitacion' element={ <CarouselFadeExample />} > </Route>
+        <Route path='/contacto' element={ <Contacto /> } > </Route>
+      </Routes>
+     
+      <Footer />
+  
+    
+  </>
   );
 }
 
